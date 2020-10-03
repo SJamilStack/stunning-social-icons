@@ -1,0 +1,89 @@
+body {
+    background: #e3edf7;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    color: #555;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 100px 0 100px;
+    letter-spacing: 4px;
+    font-size: 25px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: flex;
+    background: #e3edf7;
+    /* background: #ddd; */
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: solid 1px rgba(0,0,0,0);
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                 inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                 -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                 0.5px 0.5px 0px rgba(0,0,0,0.15),
+                 0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: solid 1px rgba(0,0,0,0.01);
+    transform: translateY(2px);
+}
+
+.social-icons a:hover i {
+    transform: scale(0.90);
+}
+
+.social-icons a:hover .fa-facebook {
+    color: #3b5998;
+}
+
+.social-icons a:hover .fa-twitter {
+    color: #00acee;
+}
+
+.social-icons a:hover .fa-instagram {
+    color: #f14843;
+}
+
+.social-icons a:hover .fa-youtube {
+    color: #f00;
+}
+
+.social-icons a:hover .fa-whatsapp {
+    color: #4fce5d;
+}
+
+.social-icons a i {
+    font-size: 35px;
+    color: #777;
+    transition: transform 0.5s;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+        padding: 80px 0 40px;
+    }
+    .social-icons a {
+        height: 40px;
+        width: 40px;
+        margin: 0 8px;
+        padding: 8px;
+    }   
+}
